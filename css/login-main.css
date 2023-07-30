@@ -1,0 +1,117 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: var(--default-font);
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue-0);
+    height: 100vh;
+    background-image: url("../imagens/login-bg.jpg");
+}
+/* containers e outros */
+.login-container
+{
+    width: var(--login-container-width);
+    height: var(--login-container-height);
+    min-width: var(--login-container-min-width);
+    min-height: var(--login-container-min-height);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--login-container-border-radius);
+
+}
+.login-subcontainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-format
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--button-font-size);
+    border-radius: var(--button-border-radius);
+    width: var(--button-width);
+    height: var(--button-height);
+    text-align: center;
+    border: none;
+}
+.input-format
+{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: var(--default-input-font);
+}
+.button-container
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+/* ESTILIZAR */
+.login-subcontainer:nth-child(1)
+{
+    background-image: url("../imagens/login-bg4.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: var(--login-container-border-radius);
+    border-bottom-left-radius: var(--login-container-border-radius);
+}
+.login-subcontainer h1
+{
+    color: var(--color-blue-0);
+    font-family: var(--h1-font-family-0);
+    
+}
+.login-subcontainer .button-format
+{
+    color: white;
+    background-color: var(--button-color-1);
+    width: 150px;
+    margin-top: 20px;
+}
+.button-format:hover
+{
+    background-color: var(--color-blue-0-hover);
+}
+.button-container a
+{
+    float: left;
+    margin: 5px;
+}
+/* formulario */
+.login-subcontainer:nth-last-child(1) form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-subcontainer:nth-last-child(1) form b.desc
+{
+    width: 80%;
+    color: var(--color-blue-0);
+    text-align: left;
+    margin-top: 10px;
+}
+.login-subcontainer:nth-last-child(1) form input { transition: border 0.3s ;}
+.login-subcontainer:nth-last-child(1) form input:focus{ border-bottom: 1px solid orange; }
+.login-subcontainer:nth-last-child(1) form input[type=submit]{ background-color: orange; width: 92%; }
+.login-subcontainer:nth-last-child(1) form input[type=submit]:hover { background-color: rgb(188, 124, 5); }

@@ -1,0 +1,28 @@
+:root
+{
+    --default-font: "Gill Sans", sans-serif;
+    --default-font-1: Arial;
+    /* colors */
+    --color-white-0: white;
+    --color-white-0-hover: rgb(169, 169, 169);
+    --color-gray-0: #666666;
+    --color-gray-0-hover: #575757;
+    --color-blue-0: #2b83d9;
+    --color-blue-0-hover: #1168be;
+    --color-orange-0: orange;
+    --color-orange-0-hover: rgb(201, 131, 0);
+    --color-green-0: green;
+    --color-green-0-hover: rgb(4, 161, 4);
+
+    /* OTHERS */
+    --header-link-border-size: 2px;
+ 
+    --button-width: 120px;
+    --button-height: 30px;
+    --button-font-size: 15px;
+    --button-border-radius: 3px;
+
+    --body-text-font-size: 15px;
+    --body-text-font-size-1: 20px;
+    --body-text-line-weight: 25px;
+}

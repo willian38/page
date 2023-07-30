@@ -1,0 +1,288 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: var(--default-font);
+    outline: none;
+    text-decoration: none;
+}
+/* Cabeçalho  */
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+.header-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-blue-0);
+}
+.header-subsection
+{
+    align-items: center;
+    display: flex;
+
+}
+.header-link
+{
+    font-size: 15px;
+    color: var(--color-white-0);
+    margin-left: 10px;
+    border-left: var(--header-link-border-size) solid var(--color-orange-0);
+    text-align: center;
+    padding-left: 20px;
+}
+/* Estilizar sessoes do header e subsessoes*/
+
+.header-section:nth-last-child(1)
+{
+    flex-direction: column;
+}
+.header-section .header-subsection-a
+{
+    float: left;
+}
+.header-section .header-right-subsection img
+{
+    width: 100px;
+    height: 100px;
+}
+.header-subsection .acount-button
+{
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.header-subsection .button-format
+{
+    border-radius: 0;
+    color: var(--color-white-0);
+    background-color: var(--color-orange-0);
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+.header-subsection .button-format.login
+{
+    width: 150px;
+    height: 50px;
+}
+.header-subsection .button-format:hover { background-color: var(--color-orange-0-hover); }
+.header-subsection.links, .header-subsection.title
+{
+    margin-left: 100px;
+}
+.header-subsection.title
+{
+    display: inline;
+    color: var(--color-white-0);
+}
+.header-subsection.title h1
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: Arial;
+    color: var(--color-white-0);
+}
+.header-subsection.title p
+{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+/* --> MOBILE HEADER e SUBCESSOES */
+
+.mobile-subsection
+{
+    display: flex;
+    height: 50px;
+}
+.mobile-header-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+/* ESTILIZAR */
+.mobile-header-button.menu
+{
+    background-color: var(--color-white-0);
+    color: var(--color-blue-0);
+}
+.mobile-header-button.login
+{
+    background-color: var(--color-orange-0);
+    color: var(--color-white-0);
+}
+.mobile-header-button.login a
+{
+    color: var(--color-white-0);
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* OUTROS */
+.button-format
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--button-font-size);
+    border-radius: var(--button-border-radius);
+    text-align: center;
+    border: none;
+}
+.input-format
+{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--color-gray-0);
+    font-family: var(--default-input-font);
+}
+/* Seção de instruçoes */
+.instruction-section
+{
+    display: flex;
+    flex-direction: column
+}
+.instruction-subsection
+{
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 50px;
+    color: var(--body-text-color-0);
+}
+/* ESTILIZAR */
+.instruction-subsection h1
+{
+    color: var(--h1-color-1);
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.instruction-subsection p
+{
+    line-height: var(--body-text-line-weight);
+    font-size: var(--body-text-font-size);
+}
+/* Body */
+.body-section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-subsection.title
+{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+}
+.body-subsection.title p
+{
+    font-size: var(--body-text-font-size-1);
+    margin-bottom: 10px;
+    color: rgb(87, 87, 87);
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.body-subsection.title h1
+{
+    font-family: var(--h1-font-family-0);
+    color: var(--color-blue-0);
+    font-weight: 900;
+    font-size: 40px;
+}
+.body-subsection.body
+{
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.body-subsection.body .left
+{
+    width: 100%;
+}
+.body-subsection.body .right
+{
+    width: 40%;
+}
+.body-subsection.body .item
+{
+    font-size: 15px;
+    color: var(--color-gray-0);
+    margin-bottom: 30px;
+}
+.body-subsection.body .item p
+{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.body-subsection.body .right .item p
+{
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.body-subsection.body .item .quad
+{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 5px;
+    text-align: center;
+}
+.body-subsection.body .item .number
+{ 
+    background-color: var(--color-green-0);
+    color: var(--color-white-0);
+}
+.body-subsection.body .item .points
+{
+    background-color: var(--color-orange-0);
+    color: var(--color-white-0);
+}
+.body-subsection.body .item .position
+{
+    background-color: var(--color-blue-0);
+    color: var(--color-white-0);
+}
+.body-subsection.body h2
+{
+    margin-bottom: 20px;
+    color: var(--color-blue-0);
+    font-weight: 900;
+}
+
+/* Media Query */
+@media screen and (max-width: 700px)
+{
+    .acount-button { display: none; }
+    .header-link{ display: none; }
+    .header-subsection.title h1{ font-size: 25px; }
+    .body-subsection.title { align-items: center;}
+    .body-subsection.body { flex-direction: column; align-items: center; text-align: center;}
+    .body-subsection.body .item p { text-align: left; margin-left: 20%;}
+    .body-subsection.body .item p.none { text-align: center; margin-left: 0;}
+    .body-subsection.body .right { width: 100%; }
+    .body-subsection.body .right p { margin-left: 0; text-align: center;}
+}
+@media screen and (min-width: 700px)
+{
+    .mobile-subsection{ display: none; }
+    .body-subsection.body { margin-left: 100px; margin-right: 100px; }
+    .body-subsection.title { margin-left: 100px; }
+}
