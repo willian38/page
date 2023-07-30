@@ -159,12 +159,12 @@ header
     margin-top: 30px;
     margin-left: 70px;
     margin-right: 50px;
-    color: var(--body-text-color-0);
+    color: var(--color-gray-0);
 }
 /* ESTILIZAR */
 .instruction-subsection h1
 {
-    color: var(--h1-color-1);
+    color: var(--color-blue-0);
     margin-bottom: 10px;
     font-weight: 900;
 }
