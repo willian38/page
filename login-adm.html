@@ -9,22 +9,23 @@
     <link rel='stylesheet' type='text/css' href='./css/login-main.css'>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-subcontainer"></div>
-        <div class="login-subcontainer">
-            <form>
-                <h1>Administrador</h1>
-                <b class="desc">Login</b>
-                <input class="input-format" type="text">
-                <b class="desc">Senha</b>
-                <input class="input-format" type="password">
-                <input type="submit" class="button-format" value="Entrar">
-                <span class="button-container">
-                    <a class="button-format" href="./index.html"><b>Inicio</b></a>
-                    <a class="button-format" href="./login-pdv.html"><b>PDV</b></a>
-                </span>
-            </form>
+    <form class="login-container" action="#">
+        <div class="icon"></div>
+        <div class="container inputs">
+            <span class="subcontainer">
+                <h1>Sua Conta</h1>
+                <p class="err" id="err"></p>
+                <b class="item">Login</b>
+                <input class="item" type="text" id="login">
+                <b class="item">Senha</b>
+                <input class="item" type="password" id="password">
+                <input class="item" type="button" value="Entrar" id="send-button">
+            </span>  
         </div>
-    </div>
+        <div class="container buttons">
+            <a href="./index.html" class="button"><b>Inicio</b></a>
+        </div>
+    </form>
+    <script type="text/javascript" src="./javascript/app-login.js"></script>
 </body>
 </html>

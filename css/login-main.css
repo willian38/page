@@ -2,116 +2,164 @@
 {
     padding: 0;
     margin: 0;
-    outline: none;
-    text-decoration: none;
     font-family: var(--default-font);
 }
 body
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--color-blue-0);
     height: 100vh;
-    background-image: url("../imagens/login-bg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* containers e outros */
+
 .login-container
 {
-    width: var(--login-container-width);
-    height: var(--login-container-height);
-    min-width: var(--login-container-min-width);
-    min-height: var(--login-container-min-height);
-    background-color: white;
+    width: 500px;
+    height: 400px;
+    background-color: var(--color-blue-0-hover);
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
-    border-radius: var(--login-container-border-radius);
-
-}
-.login-subcontainer
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-.button-format
-{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: var(--button-font-size);
-    border-radius: var(--button-border-radius);
-    width: var(--button-width);
-    height: var(--button-height);
-    text-align: center;
-    border: none;
+    border: 1px solid rgba(220, 220, 220, 0.494);
 }
-.input-format
+.icon
 {
-    width: 80%;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid gray;
-    font-family: var(--default-input-font);
-}
-.button-container
-{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-}
-/* ESTILIZAR */
-.login-subcontainer:nth-child(1)
-{
-    background-image: url("../imagens/login-bg4.jpg");
-    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    border-top-left-radius: var(--login-container-border-radius);
-    border-bottom-left-radius: var(--login-container-border-radius);
+    background-size: cover;
+    margin-top: -25px;
+    background-image: url("../imagens/pass-icon.png");
 }
-.login-subcontainer h1
+.container
 {
-    color: var(--color-blue-0);
-    font-family: var(--h1-font-family-0);
-    
+    width: 100%;
 }
-.login-subcontainer .button-format
-{
-    color: white;
-    background-color: var(--button-color-1);
-    width: 150px;
-    margin-top: 20px;
-}
-.button-format:hover
-{
-    background-color: var(--color-blue-0-hover);
-}
-.button-container a
-{
-    float: left;
-    margin: 5px;
-}
-/* formulario */
-.login-subcontainer:nth-last-child(1) form
+.subcontainer
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 12%;
 }
-.login-subcontainer:nth-last-child(1) form b.desc
+.container.inputs { 
+    height: 85%;
+}
+.subcontainer .item
 {
-    width: 80%;
-    color: var(--color-blue-0);
-    text-align: left;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.login-subcontainer:nth-last-child(1) form input { transition: border 0.3s ;}
-.login-subcontainer:nth-last-child(1) form input:focus{ border-bottom: 1px solid orange; }
-.login-subcontainer:nth-last-child(1) form input[type=submit]{ background-color: orange; width: 92%; }
-.login-subcontainer:nth-last-child(1) form input[type=submit]:hover { background-color: rgb(188, 124, 5); }
+.subcontainer b, .subcontainer h1
+{
+    color: var(--color-white-0);
+}
+h1 { 
+    margin-bottom: 20px;
+    text-align: center;
+}
+.subcontainer input
+{
+    border: 0;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.494);
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color-white-0);
+    transition: border-bottom 0.5s;
+}
+.subcontainer input[type=button]
+{
+    border: 1px solid rgba(220, 220, 220, 0.494);
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.subcontainer input[type=button]:hover
+{
+    background-color: var(--color-orange-0);
+    color: var(--color-white-0);
+}
+.subcontainer .err
+{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.subcontainer input:focus
+{
+    border-bottom: 1px solid var(--color-orange-0);
+}
+
+.container.buttons {
+    height: 15%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(220, 220, 220, 0.494);
+}
+.container .button
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-white-0);
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.button:hover
+{
+    background-color: var(--color-orange-0);
+    color: var(--color-white-0);
+}
+.button:nth-child(1)
+{
+    border-right: 1px solid rgba(220, 220, 220, 0.494);
+}
+
+@media screen and (max-width: 700px)
+{
+    body { background-color: var(--color-blue-0-hover); }
+    .login-container {
+        border: none;
+        height: 80vh;
+    }
+    .container.buttons {
+        border: none;
+        width: 60%;
+        height: 30%;
+        flex-direction: column;
+    }
+    .subcontainer h1
+    {
+        margin-top: 50px;
+    }
+    .button
+    {
+        border: 1px solid rgba(220, 220, 220, 0.494);
+        border-radius: 3px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 700px)
+{
+    .button
+    {
+        height: 100%;
+    }
+}
